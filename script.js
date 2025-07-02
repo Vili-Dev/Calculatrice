@@ -4,21 +4,32 @@
 // let currentInput = '0';
 
 
-let current = "0";
-// reperer element
+let current = "0"; // affiché
+let previous = null; // opérande 1
+let op = null; // opérateur choisi
+let resetNext = false; // flag de reset
 const displayEl = document.getElementById('display');
 
-// afficher à la suite les chiffres
-function appendDigit(d) {
- if (current === "0" && d !== ".") {
- current = d;
- } else if (d === "." && current.includes(".")) {
- return;
- } else {
- current += d;
+
+function compute() {
+ const cur = parseFloat(current); // convertit la chaîne actuelle
+ if (op === null || previous === null) return; // rien à faire
+ let res;
+ switch (op) {
+ case '+': res = previous + cur; break;
+ case '-': res = previous - cur; break;
+ case '*': res = previous * cur; break;
+ case '/': res = (cur === 0) ? 'Erreur' : previous / cur; break;
  }
+ current = res.toString(); // prépare l’affichage
+ op = null; // reset opérateur
+ previous = null; // reset opérande
+ resetNext = true; // prochain chiffre écrase
 }
 
+document.querySelectorAll('button[data-op]').forEach(btn => {
+ btn.addEventListener('click', () => {chooseOp(btn.dataset.op); updateDisplay(); });
+});
 
 function chooseOp(o) {
  // Si un opérateur existait, effectue d'abord le calcul
@@ -30,6 +41,24 @@ function chooseOp(o) {
  // Indique que l'affichage doit être écrasé au prochain chiffre
  resetNext = true;
 }
+
+
+// afficher à la suite les chiffres
+function appendDigit(digit) {
+  if (resetNext) {
+    current = digit;
+    resetNext = false;
+  } else {
+    current = current === "0" ? digit : current + digit;
+  }
+  updateDisplay();
+}
+
+document.getElementById('equal').addEventListener('click', () => {
+  compute();
+  updateDisplay();
+});
+
 
 function clearAll() {
  // Remet l'affichage à "0"
@@ -60,3 +89,8 @@ document.querySelectorAll('button[data-num]').forEach(btn => {
  updateDisplay();
  });
 });
+
+
+
+
+
