@@ -31,7 +31,7 @@ Elle permet d'effectuer les opérations de base : addition, soustraction, multip
 
 1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/Vili-Dev/plan-de-travail.git
+   git clone https://github.com/Vili-Dev/Calculatrice.git
    ```
 2. Ouvrez `index.html` dans votre navigateur.
 
