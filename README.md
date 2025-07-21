@@ -1,56 +1,72 @@
+# 🧮 Calculatrice Web Améliorée
 
-# 🧮 Calculatrice Web
+Une calculatrice moderne, accessible et responsive réalisée en **HTML**, **CSS** et **JavaScript**.  
+Elle permet d'effectuer facilement toutes les opérations de base et intègre plusieurs fonctions avancées pour une meilleure expérience utilisateur.
 
-Une calculatrice simple, élégante et responsive réalisée en **HTML**, **CSS** et **JavaScript**.  
-Elle permet d'effectuer les opérations de base : addition, soustraction, multiplication et division.
+---
+
+## 🚀 Démo en ligne
+
+Essayez la calculatrice directement ici :  
+➡️ [Voir la démo sur Netlify](https://calculatrice-ameliorer.netlify.app/)
+
+---
 
 ## 🚀 Fonctionnalités
 
-- Interface intuitive et responsive
-- Opérations de base : `+`, `−`, `×`, `÷`
-- Gestion des erreurs (ex. division par zéro)
-- Affichage dynamique
-- Design moderne avec effets de survol et de clic
+- **Interface intuitive et responsive**
+- **Support du clavier physique** (chiffres, opérateurs, Entrée, Échap, etc.)
+- **Opérations de base** : Addition, Soustraction, Multiplication, Division
+- **Bouton ±** pour changer le signe d’un nombre
+- **Historique** de la dernière opération
+- **Animations** sur les boutons lors de la saisie
+- **Gestion avancée des erreurs** (division par zéro, saisie incorrecte, etc.)
+- **Accessibilité** : boutons avec `aria-label` pour les lecteurs d'écran
+- **Effets visuels modernes** (hover, clic, animation des boutons)
+- **Responsive** : adapté pour ordinateur, tablette et mobile
+- **Code simple et maintenable** (Vanilla JS)
+
+---
 
 ## 🛠️ Technologies utilisées
 
-- **HTML5** — structure de la calculatrice
-- **CSS3** — styles et responsive design
-- **JavaScript Vanilla** — logique de calcul et interactions utilisateur
+- **HTML5** — Structure de la calculatrice
+- **CSS3** — Styles, animations, responsive design
+- **JavaScript** — Logique, gestion des événements, accessibilité
+
+---
 
 ## 📂 Structure du projet
 
-```
-📁 calculatrice/
-├── index.html       # Structure HTML
-├── style.css        # Styles et animations CSS
-└── script.js        # Logique JavaScript
-```
+calculatrice/
+├── index.html # Structure HTML
+├── style.css # Styles CSS
+├── script.js # Logique JavaScript
+├── calculatrice.png # (capture d’écran, optionnel)
+└── README.md # Ce fichier
+
+yaml
+Copier
+Modifier
+
+---
 
 ## 🔧 Utilisation
 
 1. Clonez le dépôt :
    ```bash
    git clone https://github.com/Vili-Dev/Calculatrice.git
-   ```
-2. Ouvrez `index.html` dans votre navigateur.
+Ouvrez index.html dans votre navigateur.
 
-## 📱 Responsive
+📱 Responsive
+La calculatrice est conçue pour offrir une expérience optimale sur tous les écrans (PC, tablette, smartphone).
 
-Optimisé pour fonctionner aussi bien sur ordinateur que sur mobile.
+♿️ Accessibilité
+Tous les boutons possèdent un attribut aria-label pour une utilisation facilitée avec les lecteurs d’écran.
 
-## 📸 Capture
+Navigation possible entièrement au clavier.
 
-Voici un aperçu de l'interface :
+📝 Licence
+Ce projet est sous licence MIT — voir le fichier LICENSE pour plus d'informations.
 
-<p align="center">
-  <img src="calculatrice.png" alt="Capture d'écran de la calculatrice" width="300">
-</p>
-
-## 📝 Licence
-
-Ce projet est sous licence MIT — voir le fichier [LICENSE](LICENSE) pour plus d'informations.
-
----
-
-> Créé avec ❤️ par [Vili]
+Créé avec ❤️ par [Vili]
