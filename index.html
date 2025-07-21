@@ -13,25 +13,27 @@
 
 <body>
     <div class="calculator"> <!-- Conteneur principal de la calculatrice -->
+        <div id="history" class="history"></div>
         <div id="display" class="display">0</div> <!-- Écran affichant le résultat, initialisé à 0 -->
+        <button class="plusminus" id="plusminus">±</button>
         <div class="keys"> <!-- Grille des boutons -->
-            <button class="clear" id="clear">C</button> <!-- Bouton de réinitialisation -->
-            <button class="divide" data-op="/">÷</button> <!-- Division -->
-            <button class="multiply" data-op="*">×</button> <!-- Multiplication -->
-            <button class="subtract" data-op="-">−</button> <!-- Soustraction -->
-            <button class="seven" data-num="7">7</button> <!-- 7 -->
-            <button class="eight" data-num="8">8</button> <!-- 8 -->
-            <button class="nine" data-num="9">9</button> <!-- 9 -->
-            <button class="add" data-op="+">+</button> <!-- Addition -->
-            <button class="four" data-num="4">4</button> <!-- 4 -->
-            <button class="five" data-num="5">5</button> <!-- 5 -->
-            <button class="six" data-num="6">6</button> <!-- 6 -->
-            <button class="one" data-num="1">1</button> <!-- 1 -->
-            <button class="two" data-num="2">2</button> <!-- 2 -->
-            <button class="three" data-num="3">3</button> <!-- 3 -->
-            <button class="zero" data-num="0">0</button> <!-- 0 -->
-            <button class="dot" data-num=".">.</button> <!-- Point décimal -->
-            <button class="equal" id="equal">=</button> <!-- Bouton égal -->
+            <button class="clear" id="clear" aria-label="clear">C</button> <!-- Bouton de réinitialisation -->
+            <button class="divide" data-op="/" aria-label="divide">÷</button> <!-- Division -->
+            <button class="multiply" data-op="*" aria-label="multiply">×</button> <!-- Multiplication -->
+            <button class="subtract" data-op="-" aria-label="substract">−</button> <!-- Soustraction -->
+            <button class="seven" data-num="7" aria-label="7">7</button> <!-- 7 -->
+            <button class="eight" data-num="8" aria-label="8">8</button> <!-- 8 -->
+            <button class="nine" data-num="9" aria-label="9">9</button> <!-- 9 -->
+            <button class="add" data-op="+" aria-label="addition">+</button> <!-- Addition -->
+            <button class="four" data-num="4" aria-label="4">4</button> <!-- 4 -->
+            <button class="five" data-num="5" aria-label="5">5</button> <!-- 5 -->
+            <button class="six" data-num="6" aria-label="6">6</button> <!-- 6 -->
+            <button class="one" data-num="1" aria-label="1">1</button> <!-- 1 -->
+            <button class="two" data-num="2" aria-label="2">2</button> <!-- 2 -->
+            <button class="three" data-num="3" aria-label="3">3</button> <!-- 3 -->
+            <button class="zero" data-num="0" aria-label="0">0</button> <!-- 0 -->
+            <button class="dot" data-num="." aria-label="dot">.</button> <!-- Point décimal -->
+            <button class="equal" id="equal" aria-label="equal">=</button> <!-- Bouton égal -->
         </div>
     </div>
 

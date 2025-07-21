@@ -54,6 +54,12 @@
             font-size: 2.5rem;
             font-weight: bold;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: color 0.2s, background 0.2s, font-size 0.2s, opacity 0.2s;
+        }
+
+        .display.anim {
+            opacity: 0.2;
+            font-size: 2.7rem;
         }
 
         .keys {
@@ -192,4 +198,39 @@
                 padding: 1rem;
             }
         }
-  
+
+        .display.error {
+           background: #ffbaba !important;
+           color: #a00 !important;
+           transition: background 0.2s, color 0.2s;
+        }
+
+        .plusminus {
+  background: linear-gradient(135deg, #ece9f7, #d6d0f9);
+  color: #333;
+  font-weight: bold;
+}
+
+.history {
+  min-height: 1.4em;
+  text-align: right;
+  color: #666;
+  font-size: 1.05rem;
+  margin: 0.4em 1em 0.1em 0;
+  letter-spacing: 1px;
+}
+       
+.keys button.anim {
+    animation: pop 0.15s;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1.15);
+        box-shadow: 0 0 12px #00ff95;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+}
