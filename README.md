@@ -10,6 +10,8 @@ Elle permet d'effectuer facilement toutes les opérations de base et intègre pl
 Essayez la calculatrice directement ici :  
 ➡️ [Voir la démo sur Netlify](https://calculatrice-ameliorer.netlify.app/)
 
+![aperçu du de la calculette](calculatrice.png)
+
 ---
 
 ## 🚀 Fonctionnalités
@@ -37,18 +39,14 @@ Essayez la calculatrice directement ici :
 ---
 
 ## 📂 Structure du projet
-
+```
 calculatrice/
 ├── index.html # Structure HTML
 ├── style.css # Styles CSS
 ├── script.js # Logique JavaScript
 ├── calculatrice.png # (capture d’écran, optionnel)
 └── README.md # Ce fichier
-
-yaml
-Copier
-Modifier
-
+```
 ---
 
 ## 🔧 Utilisation
